@@ -1,0 +1,115 @@
+.formacao {
+  background-color: #141414;
+}
+.formacao-containe {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 60px 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  background-color: #141414;
+  color: #fff;
+}
+.formacao-conteudo {
+  grid-template-columns: auto;
+}
+.formacao-detalhe {
+  font-size: 8rem;
+  text-transform: uppercase;
+  word-break: break-all;
+  max-width: 4ch;
+  line-height: 1;
+  font-weight: bold;
+  color: #000;
+}
+.formacao-descricao {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  margin-bottom: 60px;
+  max-width: 40ch;
+  color: #a3a3a3;
+}
+.strong {
+  color: #fff;
+}
+.formacao-geral {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+.formacao-academica {
+  background-color: #000;
+  padding: 20px;
+  border-radius: 4px;
+  display: grid;
+  gap: 10px;
+  position: relative;
+  flex: 1;
+}
+.formacao-area::before {
+  content: "";
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#b6f829, #67dd0a);
+  position: absolute;
+  top: 50px;
+  left: -4px;
+}
+.formacao-tipo {
+  color: #525252;
+  font-weight: bold;
+}
+.formacao-area {
+  margin-bottom: 30px;
+}
+.formacao-instituicao {
+  color: #525252;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.formacao-complementar {
+  display: grid;
+  gap: 40px;
+}
+.formacao-cursos {
+  position: relative;
+}
+.formacao-cursos ul {
+  justify-self: space-between;
+}
+.formacao-cursos h3::before {
+  content: "";
+  background-image: url(/img/cursos.svg);
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: -30px;
+}
+.formacao-idiomas h3::before {
+  content: "";
+  background-image: url(/img/idiomas.svg);
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: -30px;
+}
+@media (max-width: 800px) {
+  .formacao-containe {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .formacao-detalhe {
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: #fff;
+    word-break: normal;
+  }
+  .formacao-descricao {
+    font-size: 1.25rem;
+  }
+}

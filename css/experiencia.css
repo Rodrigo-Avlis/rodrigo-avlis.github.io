@@ -1,0 +1,114 @@
+.experiencia {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 40px 20px;
+}
+.experiencia-containe {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+.experiencia-detalhe {
+  font-size: 8rem;
+  text-transform: uppercase;
+  word-break: break-all;
+  max-width: 4ch;
+  color: #e0e0e0;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.experiencia-subconteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+  background-color: #f5f5f5;
+  padding: 20px 20px;
+  border-radius: 4px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.experiencia-descricao {
+  grid-column: 1 / -1;
+  margin-bottom: 60px;
+  font-size: 1.5rem;
+  line-height: 1.33;
+  color: #525252;
+  max-width: 40ch;
+}
+strong {
+  color: #141414;
+  font-weight: bold;
+}
+.experiencia-ano {
+  position: absolute;
+  top: 20px;
+  left: -100px;
+  font-size: 0.875;
+  color: #525252;
+  width: 80px;
+  text-align: right;
+}
+.experiencia-tipo {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  font-weight: bold;
+  color: #141414;
+}
+.experiencia-nivel {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  font-weight: bold;
+  color: #141414;
+}
+.experiencia-projeto {
+  font-size: 0.875;
+  color: #525252;
+}
+.experiencia-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 10px;
+  justify-content: start;
+  font-size: 0.875;
+  color: #141414;
+  align-self: start;
+}
+.experiencia-lista li {
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+.experiencia-tipo::before {
+  content: "";
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#b6f829, #67dd0a);
+  position: absolute;
+  top: 20px;
+  left: -4px;
+}
+@media (max-width: 800px) {
+  .experiencia-containe {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .experiencia-detalhe {
+    text-transform: capitalize;
+    font-size: 3rem;
+    color: #141414;
+  }
+  .experiencia-descricao {
+    font-size: 1.25rem;
+  }
+  .experiencia-ano {
+    position: initial;
+    order: 1;
+    text-align: initial;
+  }
+}
+@media (max-width: 400px) {
+  .experiencia-subconteudo {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,26 @@
+body {
+  font-family: "Fira Sans", sans-serif;
+  margin: 0px auto;
+}
+h1,
+h2,
+h3,
+p,
+a,
+ul,
+li,
+span {
+  margin: 0px;
+  padding: 0px;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
